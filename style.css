@@ -176,6 +176,7 @@ li:hover{
       background: black;
       color: white;
       border: 1px solid white;
+	 opacity: 0.5;
   }
   .choose2{
     padding: 10px;
