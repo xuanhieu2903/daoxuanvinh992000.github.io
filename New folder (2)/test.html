@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <button class="link" onclick="check(event,'vinh')">Đào Xuân Vinh</a>
+    <button class="link" onclick="check(event,'van')">Đỗ Thị Hồng Vân</a>
+    <button class="link" onclick="check(event,'toan')">Lò Văn Toàn</a>
+    <p class="show" id="vinh" style="display: none;">xin chao các bạn</p>
+    <p class="show" id="van" style="display: none;">ahihi đồ ngốc</p>
+    <p class="show" id="toan" style="display: none;">mk ngu quá sao ko biết cái này</p>
+    <script>
+        function check(evt,name){
+           var i, link1, show;
+           link1= document.getElementsByClassName("link");
+           for(i=0 ; i < link1.lenth; i++){
+               link1[i].style.display="none";
+           }
+           show=document.getElementsByClassName("show");
+           for(i=0;i< show.lenth; i++){
+               show[i].className=show[i].className.replace("active", "");
+           }
+           document.getElementById(name).style.display="block";
+           evt.currentTarget.className += "active";
+        }
+    </script>
+</body>
+</html>
