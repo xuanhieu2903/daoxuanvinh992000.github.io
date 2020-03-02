@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylefood.css">
+</head>
+
+<body>
+    <div id="containerfood">
+        <div class="sectionfood">
+            <div class="contentfood">
+                <div class="text">
+                    <h1>Lẩu wang</h1>
+                    <p> Ngày 8/2/2020 vừa rồi tôi cũng đã đến đây ăn tổ
+                        chức sinh nhật bạn gái. Thức ăn cũng được ăn no căng bụng mà giá tiền lại vừa túi. Chắc chắn lần
+                        sau có dịp ăn uống tôi sẽ chọn đây là điểm đến lý tưởng</p>
+                </div>
+                <div style="width: 100%; height: auto;"> <img
+                        src="./foody-upload-api-foody-mobile-avar102-190416134050.jpg" alt=""
+                        style="width: 100%; height: 100%;"></div>
+
+            </div>
+        </div>
+        <div class="sectionfood">
+            <div class="contentfood">
+                <div class="text">
+                    <h1>Pizza</h1>
+                    <p>Nếu bạn là người dân thủ đô, là một fan lâu năm của pizza thì chắc hẳn bạn sẽ luôn băn khoăn về
+                        một loại bánh pizza ngon nhất Hà Nội. Và nếu đã thử qua, chắc hẳn bạn sẽ không thể nào quên được
+                        những hương vị đặc biệt khác nhau, mang dấu ấn riêng .Nếu được hỏi về lí do vì sao mọi người lại
+                        yêu thích pizza đến vậy thì chắc chắn yếu tố ngon sẽ
+                         </p>
+                </div>
+                <div style="width: 60%; height: auto;"> <img src="./close-up-photo-of-person-holding-pizza-1653877.jpg"
+                        alt="" style="width: 100%; height: 100%;"></div>
+
+            </div>
+        </div>
+        <div class="sectionfood">
+            <div class="contentfood">
+                <div class="text">
+                    <h1>Bánh mỳ Hà Nội</h1>
+                    <p>
+                        Ngoài thủ đô "gây bão" là thế, chẳng biết sức hút của món ăn này ở Sài Gòn sẽ như thế nào? Liệu
+                        là sự mày mò, đầu tư có tâm huyết hay lại học theo "nửa vời" để chạy theo hiệu ứng đám đông?
+                        Mang trong mình sự tò mò không hề nhẹ, tôi quyết truy tìm cho bằng được địa chỉ quán ngay giữa
+                        lòng quận 1 để trải nghiệm.</p>
+                </div>
+                <div style="width: 100%; height: auto;"> <img src="./slice-of-bread-1586947.jpg" alt=""
+                        style="width: 100%; height: 100%;"></div>
+
+            </div>
+        </div>
+        <div class="sectionfood">
+            <div class="contentfood">
+                <div class="text">
+                    <h1>Fast food</h1>
+                    <p></p>
+                </div>
+                <div style="width: 100%; height: auto;">
+                    <img src="./food-dinner-lunch-unhealthy-70497.jpg" alt="" style="width: 100%; height: 100%;"></div>
+
+            </div>
+        </div>
+        <div class="sectionfood">
+            <div class="contentfood">
+                <div class="text">
+                    <h1>Và</h1>
+                    <p></p>
+                </div>
+                <div style="width: 100%; height: auto;">
+                    <img src="./blur-breakfast-close-up-dairy-product-376464.jpg" alt=""
+                        style="width: 100%; height: 100%;"></div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop(),
+                dh = $(document).height(),
+                wh = $(window).height();
+            value = (scroll / (dh - wh)) * 100;
+            $('#containerfood').css('left', - value * 3 + '%');
+        })
+    </script>
+</body>
+
+</html>
