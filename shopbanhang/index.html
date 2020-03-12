@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopmini</title>
+    <link rel="icon" href="https://i.imgur.com/C8Da2nw.jpg" type="image/gif" sizes="16x16">
+    <script src="./vinh.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!--<div class="container"> -->
+    <div class="header" style="background-image: url('https://i.imgur.com/KLGj77z.jpg');">
+        <nav class="navbar navbar-expand-sm navbar-dark" style="padding: 0 20px;">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="#">
+                <img src="https://shop.elmich.vn/FileUpload/Images/logo_1.png" style="width: 100px;" alt="logo">
+            </a>
+            <form class="form-inline" action="/action_page.php" style="width: 60%;">
+                <input class="form-control mr-sm-2 w-75" type="text" placeholder="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+            <!-- Links -->
+            <div class=" menuright">
+                <ul class="navbar-nav">
+                    <li class="nav-item w3-border-right px-2" style=" text-align: center;">
+                        <a href="#"><i class="fas fa-phone"
+                                style="font-size: 30px ; color: white !important;"><br>0358579239</i></a>
+                    </li>
+                    <li class="nav-item w3-border-right px-2" style=" text-align: center;">
+                        <a href="#"><i class="fas fa-envelope"
+                                style="font-size: 30px ; color: white !important;"><br>xuanvinh992000@gmail.com</i></a>
+                    </li>
+                    <li class="nav-item w3-border-right px-2" style=" text-align: center;">
+                        <a href="#"><i class="fas fa-shopping-cart"
+                                style="font-size: 30px ; color: white !important;"><br>Giỏ hàng</i></a>
+                    </li>
+                    <li class="nav-item px-2" style=" text-align: center;">
+                        <a href="#"><i class="fas fa-user" style="font-size: 30px ; color: white !important;"><br>Đăng
+                                nhập</i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </div>
+    <div class="menu sticky-top">
+        <div class="row py-3" style="color: white;">
+            <div class="col-sm-2"><button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#menucon3">
+                    Gia dụng <i class="fas fa-sort-down"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="menucon3">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#abc">1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menucon4">
+                    Điện gia dụng<i class="fas fa-sort-down"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="menucon4">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#">1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-2" style="color: black; cursor: pointer;">
+                <button  onclick="myfun()" class="navbar-toggler" type="button"> Khuyến mãi</button>
+               </div>
+            <div class="col-sm-2">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menucon5">
+                    Hướng dẫn<i class="fas fa-sort-down"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="menucon5">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="">1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-2" style="color: black; cursor:pointer">Chính sách bảo hành</div>
+            <div class="col-sm-2" style="color: black; cursor: pointer;">Liên hệ</div>
+        </div>
+    </div>
+    <div class="menu1 sticky-top">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <a class="navbar-brand" href="#" style="color: white !important;">Menu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#">Gia dụng
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menucon">
+                                <i class="fas fa-sort-down"></i>
+                            </button>
+                        </a>
+                        <div class="collapse navbar-collapse" id="menucon">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#">1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Điện gia dụng<button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#menucon1">
+                                <i class="fas fa-sort-down"></i>
+                            </button>
+                        </a>
+                        <div class="collapse navbar-collapse" id="menucon1">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#">1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Sản phẩm khuyến mãi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Hướng dẫn mua hàng<button class="navbar-toggler" type="button"
+                                data-toggle="collapse" data-target="#menucon2">
+                                <i class="fas fa-sort-down"></i>
+                            </button>
+                        </a>
+                        <div class="collapse navbar-collapse" id="menucon2">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#">1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Chính sách bảo hành</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container" id="main">
+        <div class="slide">
+            <div id="carouselExampleCaptions" class="carousel slide w-100 h-100" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://shop.elmich.vn/FileUpload/Images/banner_eshopbeptuthang.png"
+                            class="d-block w-100 h-100" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://shop.elmich.vn/FileUpload/Images/x_2.png" class="d-block w-100" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://shop.elmich.vn/FileUpload/Images/banner_tet__2.jpg" class="d-block w-100"
+                            alt="...">
+
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="row pt-4" style="text-align: center">
+            <div class="col-sm-12 top" style="font-size: 25px; ">
+                <a href=""
+                    style="font-size:  25px !important; color:  black !important ;font-weight: bold; text-decoration: none !important;"
+                    class="p-3">Gia dụng</a>
+                <a href=""
+                    style="font-size:  25px !important; color:  black !important ;font-weight: bold; text-decoration: none !important;"
+                    class="p-3">Điện gia dụng</a>
+            </div>
+        </div>
+        <hr style=" background-color: whitesmoke;">
+        <div class="content">
+            <div class="row row-cols-2" style="height: auto">
+                <div class="col-lg-3 h-100">
+                    <div class="card w-100 h-100 hover">
+                        <img class="card-img-top imginfo"
+                            src="https://shop.elmich.vn/FileUpload/Images/thumb/52_1183.jpg" alt="Card image">
+                        <div class="row" style="text-align: center">
+                            <div class="col-12">
+                                <a href="" class="p-2 bg-primary w3-round-large">Chi tiết</a>
+                                <a href="" class="p-2 bg-info w3-round-large">Chọn mua</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <a href="#">LỌ XAY TIÊU XUANVINH</a>
+                            <h4 class="my-3">Mã sản phẩm: 09092000</h4>
+                            <hr style="background-color: red;" class="mb-2">
+                            <h3>GIÁ: 135.000 VNĐ</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 h-100 ">
+                    <div class="card w-100 h-100 hover">
+                        <img class="card-img-top imginfo" src="https://shop.elmich.vn/FileUpload/Images/thumb/ci_1.jpg"
+                            alt="Card image">
+                        <div class="row" style="text-align: center">
+                            <div class="col-12">
+                                <a href="" class="p-2 bg-primary w3-round-large">Chi tiết</a>
+                                <a href="" class="p-2 bg-info w3-round-large">Chọn mua</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <a href="#">CHẢO XUANVINH CAO CẤP</a>
+                            <h4 class="my-3">Mã sản phẩm: CL-50024</h4>
+                            <hr style="background-color: red;" class="mb-2">
+                            <h3>GIÁ: 359.000 VNĐ</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 h-100">
+                    <div class="card w-100 h-100 hover">
+                        <img class="card-img-top imginfo"
+                            src="https://shop.elmich.vn/FileUpload/Images/thumb/52_1173.jpg" alt="Card image">
+                        <div class="row" style="text-align: center">
+                            <div class="col-12">
+                                <a href="" class="p-2 bg-primary w3-round-large">Chi tiết</a>
+                                <a href="" class="p-2 bg-info w3-round-large">Chọn mua</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <a href="#">BỘ DỤNG CỤ NHÀ BẾP</a>
+                            <h4 class="my-3">Mã sản phẩm: 2323852</h4>
+                            <hr style="background-color: red;" class="mb-2">
+                            <h3 style="text-decoration: line-through;">GIÁ: 529.000 VNĐ</h3>
+                            <h3>GIÁ: 329.000 VNĐ</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 h-100 ">
+                    <div class="card w-100 h-100 hover">
+                        <img class="card-img-top imginfo"
+                            src="https://shop.elmich.vn/FileUpload/Images/thumb/52_171.png" alt="Card image">
+                        <div class="row" style="text-align: center">
+                            <div class="col-12">
+                                <a href="" class="p-2 bg-primary w3-round-large">Chi tiết</a>
+                                <a href="" class="p-2 bg-info w3-round-large">Chọn mua</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <a href="#">QUÁNG INOX XUANVINH</a>
+                            <h4 class="my-3">Mã sản phẩm: 2353283</h4>
+                            <hr style="background-color: red;" class="mb-2">
+                            <h3>GIÁ: 389.000 VNĐ</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-2 mt-3" style="height: auto">
+                <div class="col-lg-3 h-100">
+                    <div class="card w-100 h-100 hover">
+                        <img class="card-img-top imginfo"
+                            src="https://shop.elmich.vn/FileUpload/Images/thumb/untitled_7.jpg" alt="Card image">
+                        <div class="row" style="text-align: center">
+                            <div class="col-12">
+                                <a href="" class="p-2 bg-primary w3-round-large">Chi tiết</a>
+                                <a href="" class="p-2 bg-info w3-round-large">Chọn mua</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <a href="#">NỒI INOX XUANVINH</a>
+                            <h4 class="my-3">Mã sản phẩm: 562225</h4>
+                            <hr style="background-color: red;" class="mb-2">
+                            <h3>GIÁ: 365.000 VNĐ</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 h-100 ">
+                    <div class="card w-100 h-100 hover">
+                        <img class="card-img-top imginfo" src="https://shop.elmich.vn/FileUpload/Images/thumb/a_7.jpg"
+                            alt="Card image">
+                        <div class="row" style="text-align: center">
+                            <div class="col-12">
+                                <a href="" class="p-2 bg-primary w3-round-large">Chi tiết</a>
+                                <a href="" class="p-2 bg-info w3-round-large">Chọn mua</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <a href="#">BÌNH GIỮ NHIỆT XUANVINH</a>
+                            <h4 class="my-3">Mã sản phẩm: VL-56945</h4>
+                            <hr style="background-color: red;" class="mb-2">
+                            <h3>GIÁ: 90.000 VNĐ</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 h-100">
+                    <div class="card w-100 h-100 hover">
+                        <img class="card-img-top imginfo" src="https://shop.elmich.vn/FileUpload/Images/thumb/60.jpg"
+                            alt="Card image">
+                        <div class="row" style="text-align: center">
+                            <div class="col-12">
+                                <a href="" class="p-2 bg-primary w3-round-large">Chi tiết</a>
+                                <a href="" class="p-2 bg-info w3-round-large">Chọn mua</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <a href="#">BỘ 3 NỒI INOX</a>
+                            <h4 class="my-3">Mã sản phẩm: 2323852</h4>
+                            <hr style="background-color: red;" class="mb-2">
+                            <h3 style="text-decoration: line-through;">GIÁ: 1.529.000 VNĐ</h3>
+                            <h3>GIÁ: 1.329.000 VNĐ</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 h-100 ">
+                    <div class="card w-100 h-100 hover">
+                        <img class="card-img-top imginfo" src="https://shop.elmich.vn/FileUpload/Images/thumb/a_28.jpg"
+                            alt="Card image">
+                        <div class="row" style="text-align: center">
+                            <div class="col-12">
+                                <a href="" class="p-2 bg-primary w3-round-large">Chi tiết</a>
+                                <a href="" class="p-2 bg-info w3-round-large">Chọn mua</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <a href="#">CHẢO CHỐNG DÍNH XUANVINH</a>
+                            <h4 class="my-3">Mã sản phẩm: 2353283</h4>
+                            <hr style="background-color: red;" class="mb-2">
+                            <h3>GIÁ: 999.000 VNĐ</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-4" style="text-align: center">
+                <div class="col-sm-12 top" style="font-size: 25px; ">
+                    <a href=""
+                        style="font-size:  25px !important; color:  black !important ;font-weight: bold; text-decoration: none !important;"
+                        class="p-3">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-6 w-100 h-100"><img src="https://shop.elmich.vn/FileUpload/Images/qcgiuatrang.jpg"
+                    class="w-100" alt=""></div>
+            <div class="col-md-6 w-100 h-100"><img src="https://shop.elmich.vn/FileUpload/Images/quangcaogiuatrang.jpg"
+                    class="w-100" alt=""></div>
+        </div>
+        <div class="col-sm-12 m-3" style="font-size: 25px; text-align: center;">
+            <a href=""
+                style="font-size:  25px !important; color:  black !important ;font-weight: bold; text-decoration: none !important;"
+                class="p-3">Tại sao lại chọn XUANVINH's shop?????</span></a>
+        </div>
+        <div class="content">
+            <div class="row p-2">
+                <div class="col-md-4">
+                    <img class="card-img-top p-5"
+                        src="https://shop.elmich.vn/FileUpload/Images/thumb/san_pham__dich_vu.png" alt="Card image">
+                    <div class="card-body">
+                        <span>Website thương mại điện tử shop.elmich.vn là nơi hiện thực hóa mong muốn sở hữu đồ gia
+                            dụng của Elmich khi không có đủ thời gian để trực tiếp đến các điểm bán...</span>
+                    </div>
+                    <hr style="background: red; width: 60%; margin: auto; margin-bottom: 1.5rem;">
+                    <div style="text-align: center;">
+                        <a href="">Xem thêm</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img class="card-img-top p-5"
+                        src="https://shop.elmich.vn/FileUpload/Images/thumb/chinh_sach_icon.png" alt="Card image">
+                    <div class="card-body">
+                        <span>Chính sách và quy định chung khi hoạt động và sử dụng dịch vụ tại website TMĐT
+                            shop.xuanvinh.vn</span>
+                    </div>
+                    <hr style="background: red; width: 60%; margin: auto; margin-bottom: 1.5rem;">
+                    <div style="text-align: center;">
+                        <a href="">Xem thêm</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img class="card-img-top p-5"
+                        src="https://shop.elmich.vn/FileUpload/Images/thumb/thietkechauau_2.png" alt="Card image">
+                    <div class="card-body">
+                        <span>Với đội ngũ thiết kế chuyên nghiệp, chúng tôi đã sáng tạo ra những sản phẩm tinh xảo trong
+                            từng đường nét và đem đến đẳng cấp khác biệt ....</span>
+                    </div>
+                    <hr style="background: red; width: 60%; margin: auto; margin-bottom: 1.5rem;">
+                    <div style="text-align: center;">
+                        <a href="">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="javascript" class="container"></div>
+    <div class="footer">
+        <div class="container">
+            <div class="row p-1">
+                <div class="col-md-6">
+                    <div class="top mb-2">
+                        <img src="https://shop.elmich.vn/FileUpload/Images/banner_chan_tran.png" alt="">
+                    </div>
+                    <span>
+                        CÔNG TY CỔ PHẦN ELMICH <br>
+                        Mã số thuế: 0105284398<br>
+                        Đăng ký ngày: 27/04/2011 tại Sở Kế hoạch và Đầu tư Thành phố Hà Nội<br>
+                        Địa chỉ văn phòng: Tầng 17, toà nhà 319 Bộ Quốc Phòng, 63 Lê Văn Lương, Cầu Giấy, Hà Nội<br>
+                        Điện thoại: (024) 5134 657 - (024) 3201 8383 / Fax: (024) 3513 4549<br>
+                        Email: info@elmich.vn
+                    </span>
+                    <div class="top">
+                        <img src="https://shop.elmich.vn/FileUpload/Images/icon_hotline.png" alt=""><span> Hotline: 1900
+                            6369 25</span>
+                        <span>
+                            <a href="https://www.facebook.com/vinh.dolla"><i class="fab fa-facebook w3-xlarge "
+                                    style="color: red;"></i></a> <a
+                                href="https://github.com/daoxuanvinh992000/daoxuanvinh992000.github.io"> <i
+                                    class="fab fa-github w3-xlarge " style="color: red;"></i></a> <a
+                                href="https://www.youtube.com/"><i class="fab fa-youtube w3-xlarge "
+                                    style="color: red;"></i></a>
+                                    <img src="https://shop.elmich.vn/Styles/img/certificate.png" style="margin-left: 7rem;" alt="">
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="top">VỀ CHÚNG TÔI</div>
+                    <a href="" class="py-1" style="display: block;">Tập đoàn vinhdeptrai</a>
+                    <a href="" class="py-1" style="display: block;">xuanvinh</a>
+                    <a href="" class="py-1" style="display: block;">Chứng nhận sản phẩm</a>
+                    <a href="" class="py-1" style="display: block;">Quy định và chính sách</a>
+                    <a href="" class="py-1" style="display: block;">Sản phẩm và dịch vụ</a>
+                </div>
+                <div class="col-md-2">
+                    <div class="top">THÔNG TIN MUA HÀNG</div>
+                    <a href="" class="py-1" style="display: block;">Vận chuyển</a>
+                    <a href="" class="py-1" style="display: block;">Thanh toán</a>
+                    <a href="" class="py-1" style="display: block;">Chính sách bảo hành</a>
+                    <a href="" class="py-1" style="display: block;">Chính sách đổi trả</a>
+                    <a href="" class="py-1" style="display: block;">Chính sách bảo về NTD</a>
+                </div>
+                <div class="col-md-2">
+                    <div class="top">LIÊN KẾT</div>
+                    <a href="" class="py-1" style="display: block;">Thương hiệu</a>
+                    <a href="" class="py-1" style="display: block;">Tin tức</a>
+                    <a href="" class="py-1" style="display: block;">Liên hệ</a>
+
+                </div>
+            </div>
+        </div>
+            <div class="row bg-dark" style="color: gray; height: 50px; line-height: 50px;">
+                <div class="col">
+                    <a href="#">COPYRIGHT © 2017 ELMICH - ALL RIGHTS RESERVED</a>
+                    <div class="anhlogo">
+                        <img src="https://shop.elmich.vn/FileUpload/Images/logocoppyright.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+</body>
+
+</html>
