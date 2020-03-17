@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.slide{
+    display: none;
+    border: 1px solid black;
+}
+.display{
+    display: block;
+}
+.img{
+    height: 230px;
+}
+.img img{
+    width: 90%;
+    height: 200px;
+    cursor: pointer;
+    border: 1px solid black;
+    
+}
+.img:hover img{
+    width: 100%;
+    height: 230px;
+    transition: 1s;
+}
